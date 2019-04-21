@@ -12,13 +12,15 @@ https://www.zoomit.ir/
 
 ## Screenshots:
 
-<b> Android Version: </b>
-<div align="center">
-     <img src="screenshots/Digiato_Android.jpeg" width="200px"</img> 
-</div>
-
 <b> iOS Version: </b>
 
  <div align="center">
     <img src="screenshots/GadgetNews_iOS.jpeg" width="200px"</img> 
 </div>
+
+<b> Android Version: </b>
+<div align="center">
+     <img src="screenshots/Digiato_Android.jpeg" width="200px"</img> 
+</div>
+
+
