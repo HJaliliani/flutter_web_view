@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_webview_plugin/flutter_webview_plugin.dart'; // Developed by the community : WebviewScaffold
+import 'package:flutter_webview_plugin/flutter_webview_plugin.dart'; // Developed by the community : WebviewScaffold https://pub.dartlang.org/packages/flutter_webview_plugin
 
 
 class MyPlaceholderWidget extends StatelessWidget {
