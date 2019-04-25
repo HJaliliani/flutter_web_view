@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'placeholder_widget.dart';
+import './about.dart';
 
 
 class Home extends StatefulWidget {
@@ -24,15 +25,26 @@ class _HomeState extends State<Home> {
         centerTitle: true,
         title: Text('اخبار تکنولوژی'),
       ),
-      drawer: new Drawer(
+      drawer:   Drawer(
         child: ListView(
           children: <Widget>[
-            new UserAccountsDrawerHeader(
+              UserAccountsDrawerHeader(
               accountName:  Text('Technology News'),
               accountEmail:  Text('Jaliliani.Hamed@Gmail.com'),
               currentAccountPicture:  CircleAvatar(
                 backgroundImage:  NetworkImage('https://i.ibb.co/0FGqpFy/technews.jpg'), // https://ibb.co/0FGqpFy
               ),
+            ),
+              ListTile(
+              title:   Text('About the App'),
+              trailing: Icon(Icons.accessibility),
+              onTap: () {
+                Navigator.of(context).pop();
+                Navigator.push(
+                    context,
+                      MaterialPageRoute(
+                        builder: (BuildContext context) =>   AboutPage()));
+              },
             ),
           ],
         ),
@@ -42,15 +54,15 @@ class _HomeState extends State<Home> {
         onTap: onTabTapped  ,
         currentIndex: _currentIndex, // this will be set when a new tab is tapped
         items: [
-          new  BottomNavigationBarItem(
+             BottomNavigationBarItem(
             icon:   Icon(Icons.phonelink_ring),
             title:   Text('GadgetNews'),
           ),
-          new  BottomNavigationBarItem(
+             BottomNavigationBarItem(
             icon:   Icon(Icons.language),
             title:   Text('Digiato'),
           ),
-          new  BottomNavigationBarItem(
+             BottomNavigationBarItem(
               icon: Icon(Icons.laptop_chromebook),
               title: Text('ZoomIt')
           )
