@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:webview_flutter/webview_flutter.dart';
+import 'package:webview_flutter/webview_flutter.dart'; // Developed by  flutter team : WebView
+import 'package:flutter_webview_plugin/flutter_webview_plugin.dart'; // Developed by the community : WebviewScaffold
 
 
 class MyPlaceholderWidget extends StatelessWidget {
@@ -14,10 +15,16 @@ class MyPlaceholderWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-   return WebView(
+   return WebviewScaffold(
         key: key,
-        javascriptMode: JavascriptMode.unrestricted,
-        initialUrl: url
+        withJavascript: true,
+        url: url,
+        hidden: true, // add loading
+        withLocalStorage: true,
+        withZoom: true,
     );
+
+
   }
+
 }
