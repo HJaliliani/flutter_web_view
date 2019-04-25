@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class AboutPage extends StatefulWidget {
   @override
@@ -10,11 +11,41 @@ class _AboutPageState extends State<AboutPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title:  Text('About this Application'),
+        title: Text('About APP')  ,
+        centerTitle: true,
       ),
-      body: Center ( child:   Text("This app developed by Flutter .") ),
+      // Text("This app developed by Flutter ."
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            FlatButton(
+              onPressed: () => _launchURL(),
+              color: Colors.green,
+              padding: EdgeInsets.all(10.0),
+              child: Column( // Replace with a Row for horizontal icon + text
+                children: <Widget>[
+                  Text("Open Github repo"),
+                  Icon(Icons.language)
+                ],
+              ),
+            ),
+            Text("\n Developed by Flutter"),
+    ],
 
-     );
+        ),
+
+      ),      );
+  }
+
+  _launchURL() async {
+    const url = 'https://github.com/HJaliliani/flutter_web_view';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
 
   }
-}

@@ -36,7 +36,7 @@ class _HomeState extends State<Home> {
               ),
             ),
               ListTile(
-              title:   Text('About the App'),
+              title:   Text('About...'),
               trailing: Icon(Icons.accessibility),
               onTap: () {
                 Navigator.of(context).pop();
