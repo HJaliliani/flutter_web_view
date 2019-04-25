@@ -24,6 +24,19 @@ class _HomeState extends State<Home> {
         centerTitle: true,
         title: Text('اخبار تکنولوژی'),
       ),
+      drawer: new Drawer(
+        child: ListView(
+          children: <Widget>[
+            new UserAccountsDrawerHeader(
+              accountName:  Text('Technology News'),
+              accountEmail:  Text('Jaliliani.Hamed@Gmail.com'),
+              currentAccountPicture:  CircleAvatar(
+                backgroundImage:  NetworkImage('https://i.ibb.co/0FGqpFy/technews.jpg'), // https://ibb.co/0FGqpFy
+              ),
+            ),
+          ],
+        ),
+      ),
       body : _children[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         onTap: onTabTapped  ,
