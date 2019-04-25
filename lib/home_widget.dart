@@ -30,15 +30,15 @@ class _HomeState extends State<Home> {
         currentIndex: _currentIndex, // this will be set when a new tab is tapped
         items: [
           new  BottomNavigationBarItem(
-            icon:   Icon(Icons.home),
+            icon:   Icon(Icons.phonelink_ring),
             title:   Text('GadgetNews'),
           ),
           new  BottomNavigationBarItem(
-            icon:   Icon(Icons.mail),
+            icon:   Icon(Icons.language),
             title:   Text('Digiato'),
           ),
           new  BottomNavigationBarItem(
-              icon: Icon(Icons.person),
+              icon: Icon(Icons.laptop_chromebook),
               title: Text('ZoomIt')
           )
         ],
