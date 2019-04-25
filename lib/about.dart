@@ -31,11 +31,10 @@ class _AboutPageState extends State<AboutPage> {
               ),
             ),
             Text("\n Developed by Flutter"),
-    ],
-
+        ],
         ),
-
-      ),      );
+      ),
+    );
   }
 
   _launchURL() async {
@@ -46,6 +45,4 @@ class _AboutPageState extends State<AboutPage> {
       throw 'Could not launch $url';
     }
   }
-
-
-  }
+}

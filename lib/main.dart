@@ -9,7 +9,6 @@ class App extends StatelessWidget {
     return MaterialApp(
       title: 'WebView Flutter',
       home: Home(),
-
     );
   }
 }
