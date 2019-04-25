@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:webview_flutter/webview_flutter.dart'; // Developed by  flutter team : WebView
 import 'package:flutter_webview_plugin/flutter_webview_plugin.dart'; // Developed by the community : WebviewScaffold
 
 
