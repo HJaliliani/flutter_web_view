@@ -14,15 +14,14 @@ https://click.ir
 
 ## Screenshots:
 
-<b> iOS Version: </b>
-
- <div align="center">
-    <img src="screenshots/ios_digiato.jpeg" width="200px"</img> 
-</div>
-
 <b> Android Version: </b>
 <div align="center">
      <img src="screenshots/andoid_gadgetnews.jpeg" width="200px"</img> 
 </div>
 
+<b> iOS Version: </b>
+
+ <div align="center">
+    <img src="screenshots/ios_digiato.jpeg" width="200px"</img> 
+</div>
 
