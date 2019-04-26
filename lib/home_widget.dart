@@ -17,7 +17,6 @@ class _HomeState extends State<Home> {
     MyPlaceholderWidget('https://digiato.com'),
     MyPlaceholderWidget('https://www.zoomit.ir'),
     MyPlaceholderWidget('https://www.itna.ir')
-
   ];
 
   @override
@@ -63,7 +62,7 @@ class _HomeState extends State<Home> {
       body : _children[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         onTap: onTabTapped  ,
-        type: BottomNavigationBarType.fixed, // to Fix add more than 3 bottom without change background to white
+        type: BottomNavigationBarType.fixed , // to Fix add more than 3 bottom without change background to white
         currentIndex: _currentIndex, // this will be set when a new tab is tapped
         items: [
              BottomNavigationBarItem(
@@ -83,6 +82,8 @@ class _HomeState extends State<Home> {
                  title: Text('ITNA')
              ),
         ],
+
+
       ),
 
     );
