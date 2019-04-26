@@ -273,6 +273,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Runner/Pods-Runner-frameworks.sh",
 				"${PODS_ROOT}/../.symlinks/flutter/ios/Flutter.framework",
+				"${BUILT_PRODUCTS_DIR}/flutter_statusbarcolor/flutter_statusbarcolor.framework",
 				"${BUILT_PRODUCTS_DIR}/url_launcher/url_launcher.framework",
 				"${BUILT_PRODUCTS_DIR}/webview_flutter/webview_flutter.framework",
 			);
@@ -281,6 +282,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Flutter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/flutter_statusbarcolor.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/url_launcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/webview_flutter.framework",
 			);

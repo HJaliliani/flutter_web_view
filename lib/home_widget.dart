@@ -31,10 +31,19 @@ class _HomeState extends State<Home> {
               UserAccountsDrawerHeader(
               accountName:  Text('Technology News'),
               accountEmail:  Text('Jaliliani.Hamed@Gmail.com'),
+
               currentAccountPicture:  CircleAvatar(
-                backgroundImage:  NetworkImage('https://i.ibb.co/0FGqpFy/technews.jpg'), // https://ibb.co/0FGqpFy
+               /* // Show Text inside circle
+                backgroundColor: Colors.brown.shade800,
+                child: Text('News'),*/
+
+               //Load image from Network
+                //it causes a glitch display render in ios, reason : to load from internet
+                backgroundImage: NetworkImage('https://i.ibb.co/0FGqpFy/technews.jpg'), // https://ibb.co/0FGqpFy
+
               ),
-            ),
+
+             ),
               ListTile(
               title:   Text('About...'),
               trailing: Icon(Icons.accessibility),
@@ -77,7 +86,6 @@ class _HomeState extends State<Home> {
       _currentIndex = index;
     });
   }
-
 }
 
 
