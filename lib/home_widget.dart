@@ -16,7 +16,7 @@ class _HomeState extends State<Home> {
     MyPlaceholderWidget('https://gadgetnews.net'),
     MyPlaceholderWidget('https://digiato.com'),
     MyPlaceholderWidget('https://www.zoomit.ir'),
-    MyPlaceholderWidget('https://www.itna.ir')
+    MyPlaceholderWidget('https://click.ir')
   ];
 
   @override
@@ -79,7 +79,7 @@ class _HomeState extends State<Home> {
           ),
              BottomNavigationBarItem(
                  icon: Icon(Icons.important_devices),
-                 title: Text('ITNA')
+                 title: Text('Click')
              ),
         ],
 
