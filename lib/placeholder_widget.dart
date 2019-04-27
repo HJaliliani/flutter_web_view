@@ -7,18 +7,27 @@ class MyPlaceholderWidget extends StatelessWidget {
   var url = 'https://www.google.com'  ;
   final key = UniqueKey();
 
-  MyPlaceholderWidget(String url){
-    this.url = url ;
+ // final flutterWebviewPlugin =   FlutterWebviewPlugin();
+
+  MyPlaceholderWidget(String url) {
+    this.url = url;
+ //   flutterWebviewPlugin.onHttpError.listen((WebViewHttpError item) {
+   //   print("   WebView    onHttpError.code: ${item.code}");
+ //   });
+
+   // flutterWebviewPlugin.launch(url, hidden: true);
   }
 
-  @override
+
+
+    @override
   Widget build(BuildContext context) {
 
    return WebviewScaffold(
         key: key,
         withJavascript: true,
         url: url,
-        hidden: true, // add loading
+hidden: true,
         withLocalStorage: true,
         withZoom: true,
     );
