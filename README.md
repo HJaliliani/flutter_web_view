@@ -5,7 +5,7 @@ Tech News developed by Flutter (Dart) it is a simple WebView that run on Android
 
 1- Master : Used webview widget by flutter team.
 
-2- WebViewPlugin: used webview plugin widget developed by flutter community.
+2- WebViewPlugin: used webview widget developed by flutter community.
 
 
 It reads the news from these websites to show:
