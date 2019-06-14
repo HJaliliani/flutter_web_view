@@ -13,10 +13,10 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   int _currentIndex = 0;
   final List<Widget> _children = [
-    MyPlaceholderWidget('hhttp://nopana.ir/'),
-    MyPlaceholderWidget('http://www.modirinfo.com/'),
-    MyPlaceholderWidget('https://ecomotive.ir/'),
-    MyPlaceholderWidget('http://www.ecosystem.ir/')
+    MyPlaceholderWidget('https://digiato.com/'),
+    MyPlaceholderWidget('https://gadgetnews.net/'),
+    MyPlaceholderWidget('https://www.zoomit.ir/'),
+    MyPlaceholderWidget('https://click.ir/')
   ];
 
   @override
@@ -24,7 +24,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text('اخبار کارآفرینی:مختص حامد'),
+        title: Text('اخبار فناوری: اختصاصی مریم'),
 
        //  actions: <Widget>[
         //  new Container(width: 60.0, height: 20.0, color: Colors.white,
@@ -35,8 +35,8 @@ class _HomeState extends State<Home> {
         child: ListView(
           children: <Widget>[
               UserAccountsDrawerHeader(
-              accountName:  Text('Entrepreneurship News'),
-              accountEmail:  Text('Hamed Ebadi'),
+              accountName:  Text('Tech News'),
+              accountEmail:  Text('Maryam'),
 
               currentAccountPicture:  CircleAvatar(
                 // Show Text inside circle
@@ -72,19 +72,19 @@ class _HomeState extends State<Home> {
         items: [
              BottomNavigationBarItem(
             icon:   Icon(Icons.phonelink_ring),
-            title:   Text('Nopana'),
+            title:   Text('DigiAto'),
           ),
              BottomNavigationBarItem(
             icon:   Icon(Icons.language),
-            title:   Text('Modirinfo'),
+            title:   Text('GadgetNews'),
           ),
              BottomNavigationBarItem(
               icon: Icon(Icons.laptop_chromebook),
-              title: Text('EcoMotive')
+              title: Text('Zoomit')
           ),
              BottomNavigationBarItem(
                  icon: Icon(Icons.important_devices),
-                 title: Text('EcoSystem')
+                 title: Text('Click')
              ),
         ],
 
