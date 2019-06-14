@@ -13,10 +13,10 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   int _currentIndex = 0;
   final List<Widget> _children = [
-    MyPlaceholderWidget('https://gadgetnews.net'),
-    MyPlaceholderWidget('https://digiato.com'),
-    MyPlaceholderWidget('https://www.zoomit.ir'),
-    MyPlaceholderWidget('https://click.ir')
+    MyPlaceholderWidget('hhttp://nopana.ir/'),
+    MyPlaceholderWidget('http://www.modirinfo.com/'),
+    MyPlaceholderWidget('https://ecomotive.ir/'),
+    MyPlaceholderWidget('http://www.ecosystem.ir/')
   ];
 
   @override
@@ -24,23 +24,28 @@ class _HomeState extends State<Home> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text('اخبار تکنولوژی'),
+        title: Text('اخبار کارآفرینی:مختص حامد'),
+
+       //  actions: <Widget>[
+        //  new Container(width: 60.0, height: 20.0, color: Colors.white,
+         //    child:  CircularProgressIndicator(),)]
+
       ),
       drawer:   Drawer(
         child: ListView(
           children: <Widget>[
               UserAccountsDrawerHeader(
-              accountName:  Text('Technology News'),
-              accountEmail:  Text('Jaliliani.Hamed@Gmail.com'),
+              accountName:  Text('Entrepreneurship News'),
+              accountEmail:  Text('Hamed Ebadi'),
 
               currentAccountPicture:  CircleAvatar(
-               /* // Show Text inside circle
+                // Show Text inside circle
                 backgroundColor: Colors.brown.shade800,
-                child: Text('News'),*/
+                child: Text('News'),
 
                //Load image from Network
                 //it causes a glitch display render in ios, reason : to load from internet
-                backgroundImage: NetworkImage('https://i.ibb.co/0FGqpFy/technews.jpg'), // https://ibb.co/0FGqpFy
+               // backgroundImage: NetworkImage('https://i.ibb.co/0FGqpFy/technews.jpg'), // https://ibb.co/0FGqpFy
 
               ),
 
@@ -67,19 +72,19 @@ class _HomeState extends State<Home> {
         items: [
              BottomNavigationBarItem(
             icon:   Icon(Icons.phonelink_ring),
-            title:   Text('GadgetNews'),
+            title:   Text('Nopana'),
           ),
              BottomNavigationBarItem(
             icon:   Icon(Icons.language),
-            title:   Text('Digiato'),
+            title:   Text('Modirinfo'),
           ),
              BottomNavigationBarItem(
               icon: Icon(Icons.laptop_chromebook),
-              title: Text('ZoomIt')
+              title: Text('EcoMotive')
           ),
              BottomNavigationBarItem(
                  icon: Icon(Icons.important_devices),
-                 title: Text('Click')
+                 title: Text('EcoSystem')
              ),
         ],
 

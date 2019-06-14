@@ -17,7 +17,15 @@ class MyPlaceholderWidget extends StatelessWidget {
    return WebView(
         key: key,
         javascriptMode: JavascriptMode.unrestricted,
-        initialUrl: url
-    );
+        initialUrl: url,
+       onWebViewCreated: (WebViewController webViewController){
+     });
+
+
+
+   }
+
+
+
   }
-}
+
