@@ -24,7 +24,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text('اخبار فناوری: اختصاصی مریم'),
+        title: Text('Tech News'),
 
        //  actions: <Widget>[
         //  new Container(width: 60.0, height: 20.0, color: Colors.white,
@@ -36,7 +36,7 @@ class _HomeState extends State<Home> {
           children: <Widget>[
               UserAccountsDrawerHeader(
               accountName:  Text('Tech News'),
-              accountEmail:  Text('Maryam'),
+              accountEmail:  Text('Tech news'),
 
               currentAccountPicture:  CircleAvatar(
                 // Show Text inside circle
