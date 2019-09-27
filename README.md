@@ -3,6 +3,7 @@ Tech News developed by Flutter (Dart) it is a simple WebView that run on Android
 
 *New changes: Migrated Main repo to AndroidX
 
+
 *Repo contains 2 branch:
 
 1- Master : Used webview widget by flutter team.
