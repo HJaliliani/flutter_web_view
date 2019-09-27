@@ -26,17 +26,17 @@ class _HomeState extends State<Home> {
         centerTitle: true,
         title: Text('Tech News'),
 
-       //  actions: <Widget>[
-        //  new Container(width: 60.0, height: 20.0, color: Colors.white,
-         //    child:  CircularProgressIndicator(),)]
+        /* actions: <Widget>[
+          new Container(width: 60.0, height: 20.0, color: Colors.blue,
+             child:  CircularProgressIndicator( backgroundColor: Colors.white),)]*/
 
       ),
       drawer:   Drawer(
         child: ListView(
           children: <Widget>[
               UserAccountsDrawerHeader(
-              accountName:  Text('Tech News'),
-              accountEmail:  Text('Tech news'),
+              accountName:  Text('Technology News'),
+              accountEmail:  Text('Jaliliani.Hamed@Gmail.com'),
 
               currentAccountPicture:  CircleAvatar(
                 // Show Text inside circle
@@ -44,7 +44,7 @@ class _HomeState extends State<Home> {
                 child: Text('News'),
 
                //Load image from Network
-                //it causes a glitch display render in ios, reason : to load from internet
+                //it might causes a glitch display render in ios, reason : to load from internet
                // backgroundImage: NetworkImage('https://i.ibb.co/0FGqpFy/technews.jpg'), // https://ibb.co/0FGqpFy
 
               ),

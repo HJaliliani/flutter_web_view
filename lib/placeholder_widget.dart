@@ -19,7 +19,7 @@ class MyPlaceholderWidget extends StatelessWidget {
         javascriptMode: JavascriptMode.unrestricted,
         initialUrl: url,
        onWebViewCreated: (WebViewController webViewController){
-     });
+      });
 
 
 
