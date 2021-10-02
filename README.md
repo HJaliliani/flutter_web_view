@@ -1,5 +1,5 @@
-# Tech News APP developed by flutter_web_view
-Tech News developed by Flutter (Dart) it is a simple WebView that run on Android & iOS.
+# Trendy APP developed by flutter_web_view
+Trendy developed by Flutter (Dart) it is a simple WebView that run on Android & iOS.
 
 *New changes: Migrated both branches to AndroidX support library.
 
