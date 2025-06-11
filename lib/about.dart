@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class AboutPage extends StatefulWidget {
+  const AboutPage({Key? key}) : super(key: key);
+
   @override
   _AboutPageState createState() =>  _AboutPageState();
 }
@@ -11,7 +13,7 @@ class _AboutPageState extends State<AboutPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('About APP')  ,
+        title: const Text('About APP')  , // Added const
         centerTitle: true,
       ),
       // Text("This app developed by Flutter ."
@@ -19,18 +21,21 @@ class _AboutPageState extends State<AboutPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            FlatButton(
+            TextButton( // Replaced FlatButton with TextButton
               onPressed: () => _launchURL(),
-              color: Colors.green,
-              padding: EdgeInsets.all(10.0),
-              child: Column( // Replace with a Row for horizontal icon + text
-                children: <Widget>[
+              style: TextButton.styleFrom(
+                backgroundColor: Colors.green,
+                padding: const EdgeInsets.all(10.0), // Added const
+                primary: Colors.white, // Explicitly set text/icon color
+              ),
+              child: Column(
+                children: const <Widget>[ // Added const
                   Text("Open Github repo"),
                   Icon(Icons.language)
                 ],
               ),
             ),
-            Text("\n Developed by Flutter"),
+            const Text("\n Developed by Flutter"), // Added const
         ],
         ),
       ),
@@ -38,9 +43,9 @@ class _AboutPageState extends State<AboutPage> {
   }
 
   _launchURL() async {
-    const url = 'https://github.com/HJaliliani/flutter_web_view';
-    if (await canLaunch(url)) {
-      await launch(url);
+    final Uri url = Uri.parse('https://github.com/HJaliliani/flutter_web_view'); // Changed to Uri.parse
+    if (await canLaunchUrl(url)) { // Changed to canLaunchUrl
+      await launchUrl(url); // Changed to launchUrl
     } else {
       throw 'Could not launch $url';
     }

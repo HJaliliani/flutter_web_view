@@ -1,31 +1,32 @@
 import 'package:flutter/material.dart';
-import 'package:webview_flutter/webview_flutter.dart'; // Developed by  flutter team : widget  WebView
+import 'package:webview_flutter/webview_flutter.dart';
 
+class MyPlaceholderWidget extends StatefulWidget {
+  final String url;
 
-class MyPlaceholderWidget extends StatelessWidget {
+  const MyPlaceholderWidget(this.url, {super.key});
 
-  var url = 'https://www.google.com'  ;
-  final key = UniqueKey();
+  @override
+  State<MyPlaceholderWidget> createState() => _MyPlaceholderWidgetState();
+}
 
-  MyPlaceholderWidget(String url){
-    this.url = url ;
+class _MyPlaceholderWidgetState extends State<MyPlaceholderWidget> {
+  late final WebViewController _controller;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = WebViewController()
+      ..setJavaScriptMode(JavaScriptMode.unrestricted)
+      ..loadRequest(Uri.parse(widget.url));
   }
 
   @override
   Widget build(BuildContext context) {
-
-   return WebView(
-        key: key,
-        javascriptMode: JavascriptMode.unrestricted,
-        initialUrl: url,
-       onWebViewCreated: (WebViewController webViewController){
-      });
-
-
-
-   }
-
-
-
+    return WebViewWidget(
+      key: widget.key, // Use the key passed from the constructor
+      controller: _controller,
+    );
   }
+}
 

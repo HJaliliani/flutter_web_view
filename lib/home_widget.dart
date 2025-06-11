@@ -4,6 +4,8 @@ import './about.dart';
 
 
 class Home extends StatefulWidget {
+  const Home({Key? key}) : super(key: key);
+
   @override
   State<StatefulWidget> createState() {
     return _HomeState();
@@ -71,20 +73,20 @@ class _HomeState extends State<Home> {
         currentIndex: _currentIndex, // this will be set when a new tab is tapped
         items: [
              BottomNavigationBarItem(
-            icon:   Icon(Icons.phonelink_ring),
-            title:   Text('DigiAto'),
+            icon:  const Icon(Icons.phonelink_ring),
+            label: 'DigiAto',
           ),
              BottomNavigationBarItem(
-            icon:   Icon(Icons.language),
-            title:   Text('GadgetNews'),
+            icon:  const Icon(Icons.language),
+            label: 'GadgetNews',
           ),
              BottomNavigationBarItem(
-              icon: Icon(Icons.laptop_chromebook),
-              title: Text('Zoomit')
+              icon: const Icon(Icons.laptop_chromebook),
+              label: 'Zoomit',
           ),
              BottomNavigationBarItem(
-                 icon: Icon(Icons.important_devices),
-                 title: Text('Click')
+                 icon: const Icon(Icons.important_devices),
+                 label: 'Click',
              ),
         ],
 
